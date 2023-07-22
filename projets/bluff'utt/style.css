@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  
+}
+
+body {
+  /*background: #1A1E23;*/
+  background-image: url(./home-img.jpeg);
+  background-attachment: fixed;
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  right: 30px;
+  
+  /*background-color: #000000;*/
+  
+  
+}
+nav{
+  float: right;
+  margin-top: 10px;
+}
+img#logo{
+  height: 70px;
+  width: 70px;
+  
+  float: left;
+}
+#name{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  
+  
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  float: left;
+  margin-top: 26px;
+  margin-left: 60px;
+}
+nav .line {
+  height: 2px;
+  position: absolute;
+  bottom: 20px;
+  /*margin: 10px 0 0 0;*/
+  background: #FF1847;
+}
+nav ul {
+  padding: 0;
+  justify-content: flex-end;
+  
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 0 40px 0 0;
+  opacity: 0.4;
+  transition: all 0.4s ease;
+  right: 0px;
+}
+nav ul li:hover {
+  opacity: 0.7;
+}
+nav ul li.active {
+  opacity: 1;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  font-size: 14px;
+  
+}
+/*
+@media (max-width: 1024px) {
+  .menu-toggle{
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 10px;
+      float: right;
+      cursor: pointer;
+      text-align: center;
+      font-size: 30px;
+      color: #FF1847;
+  }
+  .menu-toggle:before{
+      content: '\f0c9';
+      font-family: fontAwesome;
+      line-height: 40px;
+  }
+  menu-toggle.active:before{
+      content: '\f00d';
+  }
+  nav{
+    display: none;
+  }
+  #name{
+    margin-left: 20px;
+  }
+}
+*/
+
+#accueil{
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 150px;
+
+}
+
+#accueil #groslogo{
+  height: 300px;
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+h1{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  
+  
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+#a_propos{
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 150px;
+
+}
+#a_propos p{
+  text-align: center;
+  text-decoration: none;
+  margin: 50px;
+}
+
+#a_propos h2{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 200px;
+  
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+
+
+#classement{
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 150px;
+
+}
+
+#news{
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 150px;
+
+}
+
+#nous_contacter{
+  font-size: 20px;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 150px;
+
+}
+
+.contenue{
+  height: 1000px;
+  width: 200px;
+}
+
+
+
+
+
+
+
+.bd-container{
+  
+  max-width: 968px;
+  width: calc(100% - 3rem);
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/*========== CARD GLASS ==========*/
+.card{
+  position: static;
+  overflow: hidden;
+  padding: 3rem 0;
+  
+}
+
+.card__container{
+  
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card__glass{
+  
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5rem;
+  background: linear-gradient(130deg,
+              rgba(251,251,254,.6),
+              rgba(251,251,254,.2));
+  box-shadow: inset 2px 2px 1px rgba(251,251,254,.3)
+              inset -2px -2px 1px rgba(251,251,254,.2);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.card__img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #F4F4FB;
+  margin-bottom: 1rem;
+}
+
+.card__data{
+  margin-bottom: 1.5rem;
+}
+
+.card__title{
+  font-size: 20px;
+  color: #1C1C22;
+  font-weight: 600;
+  margin-bottom: .25rem;
+}
+
+.card__profession{
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+}
+
+
+
+/*========== MEDIA QUERIES ==========*/
+@media screen and (min-width: 568px){
+  .card__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px){
+  .bd-container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .card{
+    padding: 0;
+  }
+
+  .card__container{
+    height: 400px;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+  }
+
+
+}

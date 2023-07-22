@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket Launch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section> 
+        <img src="image/stars.png" id="stars">
+        <img src="image/base.png" id="base">
+        <img src="image/falcon9.png" id="rocket">
+
+        <div class="bouton">
+            <a href="#" id="btn">Launch</a>
+            <a href="../index.html" id="btn2">Home</a>
+        </div>
+        
+    </section>
+
+    <script src="anime.min.js"></script>
+    <script>
+        var animation = anime.timeline({
+            autoplay: false
+            
+        });
+
+        animation
+        .add({
+            targets: '.bouton',
+            top: '1000px',
+            duration: 500,
+            easing:'easeInOutSine'
+        })
+
+        .add({
+            targets: '#rocket',
+            top: '10px',
+            duration: 3000,
+            easing: 'easeInOutSine'
+        })
+
+        .add({
+            targets: '#base',
+            top: '100vh',
+            duration: 5000,
+            easing: 'easeInCubic'
+        }, '100')
+
+        .add({
+            targets: '#stars',
+            top: '0px',
+            duration: 5000,
+            easing:'easeInCubic',
+
+        }, '100')
+
+
+        .add({
+            targets: '.bouton',
+            top: '50%',
+            duration: 500,
+            easing:'easeInOutSine'
+        },'6000')
+
+
+
+        document.querySelector('#btn').onclick = animation.play;
+    </script>
+</body>
+</html>

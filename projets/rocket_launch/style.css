@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}    
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    pointer-events: none;
+}
+
+section img#stars{
+    top: -100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+
+section img#base{
+    height: 80%;
+    width: auto;
+    left: 50%;
+    bottom: 0px;
+    top: initial;
+    z-index: 2;
+}
+
+section img#rocket{
+    height: 80%;
+    width: auto;
+    left: 50%;
+    bottom: 0px;
+    top: initial;
+    
+    z-index: 3;
+}
+
+
+.bouton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#btn{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background-color: #fff;
+    border-radius: 40px;
+    font-size: 1.4em;
+    color: #2b1055;
+    z-index: 10000;
+}
+#btn2{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    margin-top: 85px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 50px;
+    background-color: #fff;
+    border-radius: 40px;
+    font-size: 1.4em;
+    color: #2b1055;
+    z-index: 11000;
+}

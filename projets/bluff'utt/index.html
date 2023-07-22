@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluff'UTT</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+</head>
+<body>
+  <header>
+    <div class="menu-toggle"></div>
+    <img id="logo" src="logo.png" alt="logo bluff'utt">
+    <div id="name">Bluff'UTT</div>
+    <nav>
+    
+      <ul>
+        <li class="active" id="nav1"><a href="#">Accueil</a></li>
+        <li id="nav2"><a href="#">A propos</a></li>
+        <li id="nav3"><a href="#">Classement</a></li>
+        <li id="nav4"><a href="#">News</a></li>
+        <li id="nav5"><a href="#">Nous contacter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="accueil" style="display: block;">
+    <img id="groslogo" src="logo.png" alt="logo bluff'utt">
+    <h1>Bluff'UTT</h1>
+    
+  </div>
+
+  <div id="a_propos" style="display: none;">
+    <h1>Qu'est-ce que c'est Bluff'UTT</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt est vero accusamus quisquam quae sit obcaecati magni, delectus rem sequi id repellendus libero ipsam provident? Natus adipisci nostrum sed. Quam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil est modi ab a! Nesciunt reiciendis reprehenderit laboriosam consequatur est, quos voluptatum totam! Ipsam id omnis repudiandae quo sapiente repellat quas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, molestias sed id repudiandae vitae ad distinctio exercitationem nemo earum iste nostrum ipsum ullam, blanditiis voluptate, aut est laudantium! Autem, quibusdam?</p>
+    
+    <h2>Le Bureau</h2>
+    <section class="card">
+      
+
+      <div class="card__container bd-container">
+          <div class="card__glass">
+              <img src="louis.png" alt="" class="card__img">
+
+              <div class="card__data">
+                  <h3 class="card__title">Louis Halley</h3>
+                  <span class="card__profession">Président</span>
+              </div>
+
+          </div>
+
+          <div class="card__glass">
+              <img src="thomas.png" alt="" class="card__img">
+
+              <div class="card__data">
+                  <h3 class="card__title">Thomas Guibert</h3>
+                  <span class="card__profession">Vice-Président</span>
+              </div>
+
+          </div>
+
+          <div class="card__glass">
+              <img src="max.png" alt="" class="card__img">
+
+              <div class="card__data">
+                  <h3 class="card__title">Maxime Gries</h3>
+                  <span class="card__profession">Vice-Président</span>
+              </div>
+
+              
+          </div>
+      </div>
+  </section>
+  </div>
+
+  <div id="classement" style="display: none;">
+    <h1>Classement</h1>
+    <div class="contenue">
+      <p>Google Sheets API Quickstart</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" style="display: none;">Authorize</button>
+    <button id="signout_button" style="display: none;">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+    </div>
+  </div>
+
+  <div id="news" style="display: none;">
+    <h1>News</h1>
+    <div class="contenue"></div>
+  </div>
+
+  <div id="nous_contacter" style="display: none;">
+    <h1>Nous contacter</h1>
+    <div class="contenue"></div>
+  </div>
+
+
+  <div id="bottom">
+    <p>test</p>
+  </div>
+  
+  
+  
+  
+
+  
+
+  <script src="app.js"></script>
+</body>
+</html>
