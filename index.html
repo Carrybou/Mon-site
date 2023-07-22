@@ -1,23 +1,113 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	    <title> Thomas Guibert </title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="top">
-                <h1>Thomas Guibert</h1>
-            </div>
-            <div class="main">
-                <a href="todo/index.html"><div class="bouton">To do list </div></a>
-                <a href="chrome_dino/index.html"><div class="bouton"> Dino Like</div></a>
-                <a href="3d/espace.html"><div class="bouton">3d prints</div></a>
-                
-            </div>
-        </div>
-    </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Thomas Guibert</title>
+  <meta name="description" content="portfolio Thomas Guibert">
+  <meta name="keywords" content="portfolio, Thomas Guibert">
+  <meta name="author" content="Thomas Guibert">
+  <!--MAIL du dev : thomas.guibert@utt.fr-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="body">
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="#!">Thomas Guibert</a>
+      </div>
+      <!--Barre de navigation-->
+      <nav>
+        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+        <ul class="nav-list">
+          <li>
+            <a href="./index.html">Accueil</a>
+
+          </li>
+          <li>
+            <a href="./page/projets.html">Projets</a>
+
+          </li>
+          <li>
+            <a href="./page/parcours.html">Parcours</a>
+
+          </li>
+          
+
+
+          <li>
+            <a href="./page/contact.html">Contact</a>
+
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <!-- contenue du site -->
+  <div class="container">
+    <h1> <span class="bleu">&lt;h1&gt;</span> Thomas Guibert <span class="bleu">&lt;/h1&gt;</span></h1>
+    <div class="element">
+      <div class="C1">
+        <h2 class="L2"><span class="bleu">&lt;h2&gt;</span> À propos <span class="bleu">&lt;/h2&gt;</span></h2>
+
+        <p class="L1"><span class="bleu">&lt;p&gt;</span> Je m'appelle Thomas, bienvenue sur mon site
+          portfolio ! <span class="bleu">&lt;/p&gt;</span>
+          <br><br>
+          <span class="bleu">&lt;p&gt;</span> Commençons par une petite introduction.
+
+          Je suis né le le 8 juillet 2003 à Créteil.
+
+          J'ai vécu à Sucy-en-Brie (94) jusqu'à la fin de mes années lycée, pour ensuite partir m'installer à Troyes suite à mon admission
+          à l'Université Technologique de Troyes , en septembre 2021.
+          <br>
+          J'ai créé ce site dans le but de pouvoir me présenter plus facilement, mais aussi répertorier mes différentes expériences, que ce soit des projets, ou des voyages. Vous pourrez donc retrouver ici de nombreuses informations sur moi.
+          <span class="bleu">&lt;/p&gt;</span>
+        </p>
+
+        <h2 class="L2"><span class="bleu">&lt;h2&gt;</span> Le concept du terminal <span class="bleu">&lt;/h2&gt;</span>
+        </h2>
+
+        <p class="L3"><span class="bleu">&lt;p&gt;</span> Le projet d'origine etait de faire un jeu avec la console, il
+          fallait répondre à une question pour pouvoir debloquer les pages d'après mais par manque de temps la console
+          est surtout decorative mais peut changer le theme de la page avec les commandes
+          "def theme clear" et
+          "def theme dark"
+          <span class="bleu">&lt;/p&gt;</span>
+        </p>
+      </div>
+
+      <div class="C2">
+        <p class="L1"><span class="bleu">&lt;img&gt;</span></p>
+        <img src="./img/photo_CV.jpg" alt="photo de Vinceent Gonnet" class="L2">
+      </div>
+    </div>
+  </div>
+  <!-- console pour permettre de rentrer du faux code sur la page -->
+  <div class="console">
+    <div class="output">
+
+    </div>
+    <div class="action">
+
+      <div class="admin">@admin >>> </div>
+      <textarea class="input" name="input" cols="30" rows="1"></textarea>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./js/mobile.js"></script>
+  <footer>
+    <div class="footer-bottom">
+      <p>copyright &copy;2021 Thomas Guibert. designed by <a href="http://thomas-guibert.com/" target="_blank">Thomas
+          Guibert</a></p>
+    </div>
+  </footer>
+</body>
+
 </html>
