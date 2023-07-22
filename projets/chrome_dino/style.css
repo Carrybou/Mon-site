@@ -1,0 +1,121 @@
+.game {
+    width: 600px ;
+    height: 200px;
+    border: 1px solid black;
+    margin: auto;
+    /*background-image: url(image/buildings.png);
+    background-size: 600px 200px;*/
+}
+
+
+
+
+#dino{
+    width: 50px;
+    height: 50px;
+    background-image: url(image/dino.PNG);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+.jump{
+    animation: jump 0.5s linear;
+
+}
+
+@keyframes jump {
+    0% {
+        top: 150px; 
+    }
+
+    20%{
+        top: 100px;
+    }
+
+    50%{
+        top: 60px;
+    }
+
+    80%{
+        top: 100px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+
+#cactus{
+    width: 20px;
+    height: 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    background-image: url(image/petitcactus.PNG);
+    background-size: 20px 40px;
+}
+
+.block{
+    animation: block 1s infinite linear;
+
+}
+
+@keyframes block{
+    0%{
+        left: 580px;
+    }
+
+    100%{
+        left:-20px;
+    }
+}
+
+#score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+}
+
+#bestScore {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    color: #fff;
+}
+
+
+#gameOver{
+    display: none;
+    font-size: 70px;
+    position: absolute;
+    left: calc(50% - 181px);
+    top: calc(50px - 40px);
+    width: 362px;
+    height: 80px;
+    color: #000;
+
+}
+
+.bouton{
+    text-decoration: none;
+    position: fixed;
+    padding: 8px 30px;
+    
+    bottom: 0px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    
+    font-size: 25px;
+    border: 2px solid #000;
+    box-sizing: border-box;
+  
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
